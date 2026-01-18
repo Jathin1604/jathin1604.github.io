@@ -1,18 +1,55 @@
 <!DOCTYPE html>
-            <html lang="en">
-            
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6.0, user-scalable=0" />
-                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                <meta name="lang" http-equiv="content-language" content="it">
-            </head>
-            
-            <body style="margin: 0">
-            <script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="AcvDZfwUMFdTO2V0nTYZ2";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
+<html lang="en">
 
-            </body>
-            
-            </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Project Portfolio</title> </head>
+
+<body style="margin: 0; font-family: sans-serif;">
+
+    <header style="padding: 20px; background: #333; color: white;">
+        <h1>Project Title</h1>
+    </header>
+
+    <main style="padding: 50px;">
+        <h2>Welcome to my project site</h2>
+        <p>This is where your project details, images, and data analysis work should be displayed.</p>
+    </main>
+
+    <script>
+        (function() {
+            if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+                window.chatbase = (...arguments) => {
+                    if (!window.chatbase.q) {
+                        window.chatbase.q = []
+                    }
+                    window.chatbase.q.push(arguments)
+                };
+                window.chatbase = new Proxy(window.chatbase, {
+                    get(target, prop) {
+                        if (prop === "q") {
+                            return target.q
+                        }
+                        return (...args) => target(prop, ...args)
+                    }
+                })
+            }
+            const onLoad = function() {
+                const script = document.createElement("script");
+                script.src = "https://www.chatbase.co/embed.min.js";
+                script.id = "AcvDZfwUMFdTO2V0nTYZ2";
+                script.domain = "www.chatbase.co";
+                document.body.appendChild(script)
+            };
+            if (document.readyState === "complete") {
+                onLoad()
+            } else {
+                window.addEventListener("load", onLoad)
+            }
+        })();
+    </script>
+
+</body>
+</html>
